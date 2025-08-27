@@ -1,0 +1,119 @@
+===== MODEL =====
+Raspberry Pi 5 Model B Rev 1.0
+===== CPU =====
+Architecture:                aarch64
+  CPU op-mode(s):            32-bit, 64-bit
+  Byte Order:                Little Endian
+CPU(s):                      4
+  On-line CPU(s) list:       0-3
+Vendor ID:                   ARM
+  Model name:                Cortex-A76
+    Model:                   1
+    Thread(s) per core:      1
+    Core(s) per cluster:     4
+    Socket(s):               -
+    Cluster(s):              1
+    Stepping:                r4p1
+    CPU(s) scaling MHz:      62%
+    CPU max MHz:             2400.0000
+    CPU min MHz:             1500.0000
+    BogoMIPS:                108.00
+    Flags:                   fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp
+Caches (sum of all):         
+  L1d:                       256 KiB (4 instances)
+  L1i:                       256 KiB (4 instances)
+  L2:                        2 MiB (4 instances)
+  L3:                        2 MiB (1 instance)
+NUMA:                        
+  NUMA node(s):              8
+  NUMA node0 CPU(s):         0-3
+  NUMA node1 CPU(s):         0-3
+  NUMA node2 CPU(s):         0-3
+  NUMA node3 CPU(s):         0-3
+  NUMA node4 CPU(s):         0-3
+  NUMA node5 CPU(s):         0-3
+  NUMA node6 CPU(s):         0-3
+  NUMA node7 CPU(s):         0-3
+Vulnerabilities:             
+  Gather data sampling:      Not affected
+  Indirect target selection: Not affected
+  Itlb multihit:             Not affected
+  L1tf:                      Not affected
+  Mds:                       Not affected
+  Meltdown:                  Not affected
+  Mmio stale data:           Not affected
+  Reg file data sampling:    Not affected
+  Retbleed:                  Not affected
+  Spec rstack overflow:      Not affected
+  Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+  Spectre v1:                Mitigation; __user pointer sanitization
+  Spectre v2:                Mitigation; CSV2, BHB
+  Srbds:                     Not affected
+  Tsx async abort:           Not affected
+
+===== MEMORY =====
+               total        used        free      shared  buff/cache   available
+Mem:           4.0Gi       1.3Gi       1.7Gi       237Mi       1.1Gi       2.6Gi
+Swap:          511Mi          0B       511Mi
+
+===== STORAGE =====
+NAME        MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+mmcblk0     179:0    0 29.7G  0 disk 
+├─mmcblk0p1 179:1    0  512M  0 part /boot/firmware
+└─mmcblk0p2 179:2    0 29.2G  0 part /
+
+===== DISK USAGE =====
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0  2.0G   0% /dev
+tmpfs           405M   12M  394M   3% /run
+/dev/mmcblk0p2   29G  6.1G   22G  23% /
+tmpfs           2.0G  576K  2.0G   1% /dev/shm
+tmpfs           5.0M   48K  5.0M   1% /run/lock
+/dev/mmcblk0p1  510M   69M  442M  14% /boot/firmware
+tmpfs           405M  176K  405M   1% /run/user/1000
+
+===== GPU / FIRMWARE =====
+2025/05/08 15:13:17 
+Copyright (c) 2012 Broadcom
+version 69471177 (release) (embedded)
+
+===== TEMPERATURE =====
+temp=54.9'C
+
+===== VOLTAGE =====
+volt=0.8584V
+
+===== THROTTLED STATUS =====
+throttled=0x0
+
+===== USB DEVICES =====
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 002: ID 413c:2111 Dell Computer Corp. Dell USB Wired Entry Keyboard
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 002: ID 0461:4e22 Primax Electronics, Ltd Dell Mouse, 2 Buttons, Modell: MS111-P
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+===== PCIe DEVICES =====
+0002:00:00.0 PCI bridge: Broadcom Inc. and subsidiaries BCM2712 PCIe Bridge (rev 21)
+0002:01:00.0 Ethernet controller: Raspberry Pi Ltd RP1 PCIe 2.0 South Bridge
+
+===== NETWORK =====
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN group default qlen 1000
+    link/ether 2c:cf:67:5e:92:a2 brd ff:ff:ff:ff:ff:ff
+3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 2c:cf:67:5e:92:a3 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.24/24 brd 192.168.1.255 scope global dynamic noprefixroute wlan0
+       valid_lft 85243sec preferred_lft 85243sec
+    inet6 2401:4900:88ca:8e40:2393:99b7:bf2a:8cbb/64 scope global dynamic noprefixroute 
+       valid_lft 86313sec preferred_lft 86313sec
+    inet6 fe80::4d20:5fad:29e9:c51b/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+spherenex@raspberrypi:~ $ 
+
